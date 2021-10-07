@@ -23,6 +23,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout # checkout source code to working directory
+      - run: npm i
       - run: npm audit
 workflows:
   # Name the workflow
