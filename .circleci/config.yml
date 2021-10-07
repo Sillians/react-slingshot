@@ -10,8 +10,7 @@ jobs:
 
     steps:
       - checkout # checkout source code to working directory
-      - run:
-          command: npm run lint
+      - run: npm run lint
   test:
     docker:
       - image: circleci/node:13.8.0
